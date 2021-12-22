@@ -6,6 +6,7 @@ public class Calculator {
     BinaryOperator<Integer> plus = (x, y) -> x + y;
     BinaryOperator<Integer> minus = (x, y) -> x - y;
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
+    // Была ошибка деление на ноль. сделал дополнительные проверки значения y
     BinaryOperator<Integer> devide = (x, y) -> y == 0 ? 0 : x / y;
 
     UnaryOperator<Integer> pow = x -> x * x;
